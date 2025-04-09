@@ -46,8 +46,9 @@ int main(){
         printf("TABELA DE FUNCIONALIDADES\n");
         printf("1 para alterar SALDO do usuario\n");
         printf("2 para alterar ID do usuario\n");
-        printf("1 para alterar CPF do usuario\n");
+        printf("3 para alterar CPF do usuario\n");
         scanf("%i", &funcionalidade);
+
         if(funcionalidade == 1){
             printf("Qual dos usuarios voce deseja alterar o valor:(1, 2 ou 3)\n");
             scanf("%i", &usuarios);
@@ -61,11 +62,35 @@ int main(){
             printf("saldo = %f\n", saldo[usuarios]);
             printf("cpf = %i\n", cpf[usuarios]);
             printf("id = %i\n", id[usuarios]);
-
-
         }
-
-
+        if(funcionalidade == 2){
+            printf("Qual dos usuarios voce deseja alterar o valor:(1, 2 ou 3)\n");
+            scanf("%i", &usuarios);
+            printf("Para qual valor alterar o ID: \n");
+            scanf("%f", &alterar );
+            // printf("%f", alterar);
+            id[usuarios] = alterar;
+            printf("o valor foi redefinido para %i\n", id[usuarios]);
+            printf("****************************************\n");
+            printf("O ususario ficou com: \n");
+            printf("saldo = %f\n", saldo[usuarios]);
+            printf("cpf = %i\n", cpf[usuarios]);
+            printf("id = %i\n", id[usuarios]);
+        }
+            if(funcionalidade == 3){
+            printf("Qual dos usuarios voce deseja alterar o valor:(1, 2 ou 3)\n");
+            scanf("%i", &usuarios);
+            printf("Para qual valor alterar o CPF: \n");
+            scanf("%f", &alterar );
+            // printf("%f", alterar);
+            cpf[usuarios] = alterar;
+            printf("o valor foi redefinido para %i\n", cpf[usuarios]);
+            printf("****************************************\n");
+            printf("O ususario ficou com: \n");
+            printf("saldo = %f\n", saldo[usuarios]);
+            printf("cpf = %i\n", cpf[usuarios]);
+            printf("id = %i\n", id[usuarios]);
+        }
 
 
     }
